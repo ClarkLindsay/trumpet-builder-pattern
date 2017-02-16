@@ -3,41 +3,29 @@ package edu.jalc.trumpet;
 class Material {
 
    private Color trumpetColor;
-   private EtchingOnTrumpet trumpetEtching;
-   
-   private Material() throws Exception {
-      setColor(null);
-      setEtching(null);
+   private Etching trumpetEtching;
+      
+   Material() {
+      trumpetColor = null;
+      trumpetEtching = null;
    }
    
-   Material(Color color, EtchingOnTrumpet etching) {
-      trumpetColor = color;
-      trumpetEtching = etching;
-   }
-   
-   Color setColor(Color color) throws Exception {
+   void setColor(Color color) throws Exception {
       if(color == null) 
          throw new Exception("Color cannot be null");
       
       trumpetColor = color;
-      
-      return trumpetColor;
    }
    
-   EtchingOnTrumpet setEtching(EtchingOnTrumpet etching) throws Exception {
-      if(etching == null) 
-         throw new Exception("Etching cannot be null");
-      
+   void setEtching(Etching etching){ 
       trumpetEtching = etching;
-      
-      return trumpetEtching;
    }
       
    Color  getColor(){ 
       return trumpetColor; 
    }
    
-   EtchingOnTrumpet getEtching(){
+   Etching getEtching(){
       return trumpetEtching;
    }
 }

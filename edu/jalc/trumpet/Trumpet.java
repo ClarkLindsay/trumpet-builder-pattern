@@ -4,15 +4,10 @@ class Trumpet {
 
    private Material trumpetMaterial;
    private MouthPiece trumpetMouthPiece;
-   
-   private Trumpet() throws Exception {
-      setMaterial(null);
-      setMouthPiece(null);
-   }
-      
-   Trumpet(Material material, MouthPiece mouthPiece) {
-      trumpetMaterial = material;
-      trumpetMouthPiece = mouthPiece;
+         
+   Trumpet() {
+      trumpetMaterial = null;
+      trumpetMouthPiece = null;
    }
 
    void setMaterial(Material material) throws Exception {
@@ -22,13 +17,11 @@ class Trumpet {
       trumpetMaterial = material;
    }
 
-   MouthPiece setMouthPiece(MouthPiece mouthPiece) throws Exception{
+   void setMouthPiece(MouthPiece mouthPiece) throws Exception{
       if(mouthPiece == null) 
          throw new Exception("MouthPiece cannot be null");
    
       trumpetMouthPiece = mouthPiece;
-      
-      return trumpetMouthPiece;
    }
    
    Material getMaterial(){	
