@@ -1,21 +1,11 @@
-package JohnALogan.Spring2017.CPS206.Labs.POJO.Trumpet;
-
-//import edu.jalc.inclass.label.TrumpetLabel;
-//import edu.jalc.inclass.lid.TrumpetMaterial;
-//import edu.jalc.inclass.liquid.Soda;
+package edu.jalc.trumpet;
 
 public class TrumpetTest {
 
-   public void testGetBellSize() throws Exception {
-      System.out.println("Testing Trumpet::getBellSize");
-      Trumpet trumpet = new Trumpet(1, new Material(null), new MouthPiece(1, null));
-      assert(trumpet.getBellSize() == 1);
-   }
-
    public void testSetMaterial() throws Exception {
       System.out.println("Testing Trumpet::setMaterial");
-      Trumpet trumpet = new Trumpet(1, new Material(null), new MouthPiece(1, null));
-      Material material = new Material(null);
+      Trumpet trumpet = new Trumpet(new Material(null, null), new MouthPiece(null, null));
+      Material material = new Material(null, null);
       trumpet.setMaterial(material);
       assert(material == trumpet.getMaterial());
    }
@@ -24,7 +14,7 @@ public class TrumpetTest {
       System.out.println("Testing Trumpet::setMaterial for exception");
       boolean exceptionThrown = false;
       try {
-         new Trumpet(1, new Material(null), new MouthPiece(1, null));
+         new Trumpet(new Material(null, null), new MouthPiece(null, null));
       } 
       catch (Exception e){
          exceptionThrown = true;
@@ -35,8 +25,8 @@ public class TrumpetTest {
    
     public void testSetMouthPiece() throws Exception {
       System.out.println("Testing Trumpet::setMouthPiece");
-      Trumpet trumpet = new Trumpet(1, new Material(null), new MouthPiece(1, null));
-      MouthPiece mouthPiece = new MouthPiece(1, null);
+      Trumpet trumpet = new Trumpet(new Material(null, null), new MouthPiece(null, null));
+      MouthPiece mouthPiece = new MouthPiece(null, null);
       trumpet.setMouthPiece(mouthPiece);
       assert(mouthPiece == trumpet.getMouthPiece());
    }
@@ -45,7 +35,7 @@ public class TrumpetTest {
       System.out.println("Testing Trumpet::setMouthPiece for exception");
       boolean exceptionThrown = false;
       try {
-         new Trumpet(1, new Material(null), new MouthPiece(1, null));
+         new Trumpet(new Material(null, null), new MouthPiece(null, null));
       } 
       catch (Exception e){
          exceptionThrown = true;
@@ -57,22 +47,21 @@ public class TrumpetTest {
 
    public void testGetMaterial() throws Exception {
       System.out.println("Testing Trumpet::getMaterial");
-      Material material = new Material(null);
-      Trumpet trumpet = new Trumpet(1, new Material(null), new MouthPiece(1, null));
+      Material material = new Material(null, null);
+      Trumpet trumpet = new Trumpet(new Material(null, null), new MouthPiece(null, null));
       assert(material == trumpet.getMaterial());
    }
 
    public void testGetMouthPiece() throws Exception {
       System.out.println("Testing Trumpet::getMouthPiece");
-      MouthPiece mouthPiece = new MouthPiece(1, null);
-      Trumpet trumpet = new Trumpet(1, new Material(null), new MouthPiece(1, null));
+      MouthPiece mouthPiece = new MouthPiece(null, null);
+      Trumpet trumpet = new Trumpet(new Material(null, null), new MouthPiece(null, null));
       assert(mouthPiece == trumpet.getMouthPiece());
    }
 
 
    public static void main(String... args) throws Exception {
       TrumpetTest trumpetTest = new TrumpetTest();
-      trumpetTest.testGetBellSize();
       trumpetTest.testSetMaterial();
       trumpetTest.testSetMaterialWithException();
       trumpetTest.testSetMouthPiece();
