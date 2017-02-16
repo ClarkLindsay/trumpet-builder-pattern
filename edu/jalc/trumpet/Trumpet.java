@@ -15,13 +15,11 @@ class Trumpet {
       trumpetMouthPiece = mouthPiece;
    }
 
-   Material setMaterial(Material material) throws Exception {
+   void setMaterial(Material material) throws Exception {
       if(material == null) 
          throw new Exception("Material cannot be null");
       
       trumpetMaterial = material;
-      
-      return trumpetMaterial;
    }
 
    MouthPiece setMouthPiece(MouthPiece mouthPiece) throws Exception{
