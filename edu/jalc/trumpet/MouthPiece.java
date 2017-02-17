@@ -3,11 +3,11 @@ package edu.jalc.trumpet;
 class MouthPiece {
 
    private Style mouthPieceStyle;
-   private Height mouthPieceHeight;
+   private BoreSize mouthPieceBoreSize;
 
-   MouthPiece() {
-      mouthPieceStyle = null;
-      mouthPieceHeight = null;
+   MouthPiece(Style style, BoreSize boreSize) {
+      mouthPieceStyle = style;
+      mouthPieceBoreSize = boreSize;
    } 
       
    void setStyle(Style style) throws Exception {
@@ -17,18 +17,18 @@ class MouthPiece {
       mouthPieceStyle = style;
    }
    
-   void setHeight(Height height) throws Exception {
-      if(height == null) 
-         throw new Exception("Height cannot be null");
+   void setBoreSize(BoreSize boreSize) throws Exception {
+      if(boreSize == null) 
+         throw new Exception("BoreSize cannot be null");
       
-      mouthPieceHeight = height;
+      mouthPieceBoreSize = boreSize;
    }
    
    public Style getStyle(){
       return mouthPieceStyle;
    }
    
-   public Height getHeight(){
-      return mouthPieceHeight;
+   public BoreSize getBoreSize(){
+      return mouthPieceBoreSize;
    } 
 }

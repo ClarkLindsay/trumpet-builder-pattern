@@ -5,9 +5,9 @@ class Material {
    private Color trumpetColor;
    private Etching trumpetEtching;
       
-   Material() {
-      trumpetColor = null;
-      trumpetEtching = null;
+   Material(Color color, Etching etching) {
+      trumpetColor = color;
+      trumpetEtching = etching;
    }
    
    void setColor(Color color) throws Exception {

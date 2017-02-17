@@ -5,9 +5,9 @@ class Trumpet {
    private Material trumpetMaterial;
    private MouthPiece trumpetMouthPiece;
          
-   Trumpet() {
-      trumpetMaterial = null;
-      trumpetMouthPiece = null;
+   Trumpet(Material material, MouthPiece mouthPiece) {
+      trumpetMaterial = material;
+      trumpetMouthPiece = mouthPiece;
    }
 
    void setMaterial(Material material) throws Exception {
@@ -25,10 +25,10 @@ class Trumpet {
    }
    
    Material getMaterial(){	
-      return trumpetMaterial; 
+      return this.trumpetMaterial; 
    }
       
    MouthPiece getMouthPiece(){ 
-      return trumpetMouthPiece; 
+      return this.trumpetMouthPiece; 
    }
 }
