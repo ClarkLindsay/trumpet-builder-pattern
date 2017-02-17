@@ -2,16 +2,8 @@ package edu.jalc.trumpet.materialProperties.color;
 
 public class Color {
 
-   private final int colorValue;
-
-   private Color() {
-      colorValue = 0;
-   }
-   
-   public Color(int colorValue){
-      this.colorValue = colorValue;
-   }
-   
+   private final int colorValue = 1;
+      
    public int getColorValue(){
       return colorValue;
    }
