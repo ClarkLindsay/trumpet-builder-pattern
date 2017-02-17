@@ -1,4 +1,4 @@
-package edu.jalc.trumpet.boreSize;
+package edu.jalc.trumpet.mouthPieceProperties.boreSize;
 
 public class BoreSizeTest{
    

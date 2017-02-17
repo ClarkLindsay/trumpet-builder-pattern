@@ -1,4 +1,4 @@
-package edu.jalc.trumpet.etching;
+package edu.jalc.trumpet.materialProperties.etching;
 
 public class EtchingTest{
    

@@ -1,23 +1,23 @@
 package edu.jalc.trumpet.mouthPiece;
 
-import edu.jalc.trumpet.brand.Style;
-import edu.jalc.trumpet.boreSize.BoreSize;
+import edu.jalc.trumpet.mouthPieceProperties.rimStyle.RimStyle;
+import edu.jalc.trumpet.mouthPieceProperties.boreSize.BoreSize;
 
 public class MouthPiece {
 
-   private Style mouthPieceStyle;
+   private RimStyle style;
    private BoreSize mouthPieceBoreSize;
 
-   public MouthPiece(Style style, BoreSize boreSize) {
-      mouthPieceStyle = style;
-      mouthPieceBoreSize = boreSize;
+   public MouthPiece(RimStyle style, BoreSize mouthPieceBoreSize) {
+      this.style = style;
+      this.mouthPieceBoreSize = mouthPieceBoreSize;
    } 
       
-   void setStyle(Style style) throws Exception {
+   void setStyle(RimStyle style) throws Exception {
       if(style == null) 
          throw new Exception("Style cannot be null");
       
-      mouthPieceStyle = style;
+      this.style = style;
    }
    
    void setBoreSize(BoreSize boreSize) throws Exception {
@@ -27,8 +27,8 @@ public class MouthPiece {
       mouthPieceBoreSize = boreSize;
    }
    
-   public Style getStyle(){
-      return mouthPieceStyle;
+   public RimStyle getRimStyle(){
+      return style;
    }
    
    public BoreSize getBoreSize(){

@@ -8,16 +8,16 @@ class Trumpet {
    private Material trumpetMaterial;
    private MouthPiece trumpetMouthPiece;
          
-   Trumpet(Material material, MouthPiece mouthPiece) {
-      trumpetMaterial = material;
-      trumpetMouthPiece = mouthPiece;
+   Trumpet(Material trumpetMaterial, MouthPiece trumpetMouthPiece) {
+      this.trumpetMaterial = trumpetMaterial;
+      this.trumpetMouthPiece = trumpetMouthPiece;
    }
 
-   void setMaterial(Material material) throws Exception {
-      if(material == null) 
+   void setMaterial(Material trumpetMaterial) throws Exception {
+      if(trumpetMaterial == null) 
          throw new Exception("Material cannot be null");
       
-      trumpetMaterial = material;
+      this.trumpetMaterial = trumpetMaterial;
    }
 
    void setMouthPiece(MouthPiece mouthPiece) throws Exception{

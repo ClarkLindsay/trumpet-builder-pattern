@@ -1,16 +1,16 @@
 package edu.jalc.trumpet.mouthPiece;
 
-import edu.jalc.trumpet.brand.Style;
-import edu.jalc.trumpet.boreSize.BoreSize;
+import edu.jalc.trumpet.mouthPieceProperties.rimStyle.RimStyle;
+import edu.jalc.trumpet.mouthPieceProperties.boreSize.BoreSize;
 
 public class MouthPieceTest {
 
    public void testSetStyle() throws Exception {
       System.out.println("Testing MouthPiece::setStyle");
       MouthPiece mouthPiece = new MouthPiece(null, null);
-      Style style = new Style(0);
+      RimStyle style = new RimStyle(0);
       mouthPiece.setStyle(style);
-      assert(style == mouthPiece.getStyle());
+      assert(style == mouthPiece.getRimStyle());
    }
    
    public void testSetBoreSize() throws Exception {
@@ -24,9 +24,9 @@ public class MouthPieceTest {
 
    public void testGetStyle() throws Exception {
       System.out.println("Testing MouthPiece::getStyle");
-      Style style = new Style(0);
+      RimStyle style = new RimStyle(0);
       MouthPiece trumpetMouthPiece = new MouthPiece(style, null);		
-      assert(trumpetMouthPiece.getStyle() == style);
+      assert(trumpetMouthPiece.getRimStyle() == style);
    }
    
    public void testGetBoreSize() throws Exception {

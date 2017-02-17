@@ -1,7 +1,7 @@
 package edu.jalc.trumpet.material;
 
-import edu.jalc.trumpet.color.Color;
-import edu.jalc.trumpet.etching.Etching;
+import edu.jalc.trumpet.materialProperties.color.Color;
+import edu.jalc.trumpet.materialProperties.etching.Etching;
 
 public class MaterialTest {
 

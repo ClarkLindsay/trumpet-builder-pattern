@@ -1,15 +1,15 @@
-package edu.jalc.trumpet.color;
+package edu.jalc.trumpet.materialProperties.color;
 
 public class Color {
 
    private int colorValue;
 
    private Color() {
-      colorValue = 4;
+      colorValue = 0;
    }
    
-   public Color(int color){
-      colorValue = color;
+   public Color(int colorValue){
+      this.colorValue = colorValue;
    }
    
    public int getColorValue(){

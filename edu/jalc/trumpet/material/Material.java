@@ -1,16 +1,16 @@
 package edu.jalc.trumpet.material;
 
-import edu.jalc.trumpet.color.Color;
-import edu.jalc.trumpet.etching.Etching;
+import edu.jalc.trumpet.materialProperties.color.Color;
+import edu.jalc.trumpet.materialProperties.etching.Etching;
 
 public class Material {
 
    private Color trumpetColor;
    private Etching trumpetEtching;
       
-   public Material(Color color, Etching etching) {
-      trumpetColor = color;
-      trumpetEtching = etching;
+   public Material(Color trumpetColor, Etching trumpetEtching) {
+      this.trumpetColor = trumpetColor;
+      this.trumpetEtching = trumpetEtching;
    }
    
    void setColor(Color color) throws Exception {
@@ -20,8 +20,8 @@ public class Material {
       trumpetColor = color;
    }
    
-   void setEtching(Etching etching){ 
-      trumpetEtching = etching;
+   void setEtching(Etching trumpetEtching){ 
+      this.trumpetEtching = trumpetEtching;
    }
       
    Color  getColor(){ 

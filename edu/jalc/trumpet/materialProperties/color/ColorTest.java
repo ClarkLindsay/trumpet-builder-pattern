@@ -1,4 +1,4 @@
-package edu.jalc.trumpet.color;
+package edu.jalc.trumpet.materialProperties.color;
 
 public class ColorTest{
    
