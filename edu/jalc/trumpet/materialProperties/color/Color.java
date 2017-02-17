@@ -2,7 +2,7 @@ package edu.jalc.trumpet.materialProperties.color;
 
 public class Color {
 
-   private int colorValue;
+   private final int colorValue;
 
    private Color() {
       colorValue = 0;
