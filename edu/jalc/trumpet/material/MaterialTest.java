@@ -1,11 +1,14 @@
-package edu.jalc.trumpet;
+package edu.jalc.trumpet.material;
+
+import edu.jalc.trumpet.color.Color;
+import edu.jalc.trumpet.etching.Etching;
 
 public class MaterialTest {
 
    public void testSetColor() throws Exception {
       System.out.println("Testing Material::setColor");
       Material material = new Material(null, null);
-      Color color = new Color(null);
+      Color color = new Color(0);
       material.setColor(color);
       assert(color == material.getColor());
    }
@@ -13,7 +16,7 @@ public class MaterialTest {
    public void testSetEtching() throws Exception {
       System.out.println("Testing Material::setEtching");
       Material material = new Material(null, null);
-      Etching etching = new Etching(null);
+      Etching etching = new Etching(0);
       material.setEtching(etching);
       assert(etching == material.getEtching());
    }
@@ -21,14 +24,14 @@ public class MaterialTest {
 
    public void testGetColor() throws Exception {
       System.out.println("Testing Material::getColor");
-      Color color = new Color(null);
+      Color color = new Color(0);
       Material trumpetMaterial = new Material(color, null);		
       assert(trumpetMaterial.getColor() == color);
    }
    
    public void testGetEtching() throws Exception {
       System.out.println("Testing Material::getEtching");
-      Etching etching = new Etching(null);
+      Etching etching = new Etching(0);
       Material trumpetMaterial = new Material(null, etching);
       assert(trumpetMaterial.getEtching() == etching);
    }

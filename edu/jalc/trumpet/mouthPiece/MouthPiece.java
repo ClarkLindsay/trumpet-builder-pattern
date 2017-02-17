@@ -1,11 +1,14 @@
-package edu.jalc.trumpet;
+package edu.jalc.trumpet.mouthPiece;
 
-class MouthPiece {
+import edu.jalc.trumpet.brand.Style;
+import edu.jalc.trumpet.boreSize.BoreSize;
+
+public class MouthPiece {
 
    private Style mouthPieceStyle;
    private BoreSize mouthPieceBoreSize;
 
-   MouthPiece(Style style, BoreSize boreSize) {
+   public MouthPiece(Style style, BoreSize boreSize) {
       mouthPieceStyle = style;
       mouthPieceBoreSize = boreSize;
    } 

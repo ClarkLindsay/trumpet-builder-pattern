@@ -1,10 +1,10 @@
-package edu.jalc.trumpet;
+package edu.jalc.trumpet.boreSize;
 
-class BoreSizeTest{
+public class BoreSizeTest{
    
    public void testGetDepth() throws Exception {
       System.out.println("Testing BoreSize::getDepth");
-      BoreSize boreSize = new BoreSize(null);
+      BoreSize boreSize = new BoreSize(7);
       assert(boreSize.getDepth() == 7);
    }
    

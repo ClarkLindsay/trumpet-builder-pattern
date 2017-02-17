@@ -1,10 +1,10 @@
-package edu.jalc.trumpet;
+package edu.jalc.trumpet.brand;
 
-class StyleTest{
+public class StyleTest{
    
    public void testGetModelNumber() throws Exception {
       System.out.println("Testing Style::getModelNumber");
-      Style style = new Style(null);
+      Style style = new Style(33495);
       assert(style.getModelNumber() == 33495);
    }
    

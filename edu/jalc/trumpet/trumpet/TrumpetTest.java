@@ -1,4 +1,7 @@
-package edu.jalc.trumpet;
+package edu.jalc.trumpet.trumpet;
+
+import edu.jalc.trumpet.material.Material;
+import edu.jalc.trumpet.mouthPiece.MouthPiece;
 
 public class TrumpetTest {
 

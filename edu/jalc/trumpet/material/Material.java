@@ -1,11 +1,14 @@
-package edu.jalc.trumpet;
+package edu.jalc.trumpet.material;
 
-class Material {
+import edu.jalc.trumpet.color.Color;
+import edu.jalc.trumpet.etching.Etching;
+
+public class Material {
 
    private Color trumpetColor;
    private Etching trumpetEtching;
       
-   Material(Color color, Etching etching) {
+   public Material(Color color, Etching etching) {
       trumpetColor = color;
       trumpetEtching = etching;
    }

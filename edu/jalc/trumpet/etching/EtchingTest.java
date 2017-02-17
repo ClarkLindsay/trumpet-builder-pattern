@@ -1,10 +1,10 @@
-package edu.jalc.trumpet;
+package edu.jalc.trumpet.etching;
 
-class EtchingTest{
+public class EtchingTest{
    
    public void testGetNumberOfEtchings() throws Exception {
       System.out.println("Testing Etching::getNumberOfEtchings");
-      Etching etching = new Etching(null);
+      Etching etching = new Etching(27);
       assert(etching.getNumberOfEtchings() == 27);
    }
    
