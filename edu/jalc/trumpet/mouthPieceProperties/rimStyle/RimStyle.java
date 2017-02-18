@@ -2,7 +2,7 @@ package edu.jalc.trumpet.mouthPieceProperties.rimStyle;
 
 public class RimStyle {
 
-   private int rimWidth;
+   private final int rimWidth;
 
    private RimStyle() {
       rimWidth = 0;
