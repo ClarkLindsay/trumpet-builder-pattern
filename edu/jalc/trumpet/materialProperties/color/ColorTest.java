@@ -2,15 +2,29 @@ package edu.jalc.trumpet.materialProperties.color;
 
 public class ColorTest{
    
-   public void testGetColorValue() throws Exception {
-      System.out.println("Testing Color::getColorValue");
-      Color color = new Color();
-      assert(color.getColorValue() == 1);
-   }
-   
-   public static void main(String[] args) throws Exception{
-      ColorTest colorTest = new ColorTest();
-      colorTest.testGetColorValue();
-      System.out.println("ColorTest complete");
-   }
-}
+  public void testGetRed(){
+		System.out.println("Testing Color:getRed");
+		Color Color = new Color(1, 1, 1);
+		assert(Color.getRed() == 1);
+	}
+
+	public void testGetGreen(){
+		System.out.println("Testing Color:getGreen");
+		Color Color = new Color(1, 1, 1);
+		assert(Color.getRed() == 1);
+	}
+
+	public void testGetBlue(){
+		System.out.println("Testing Color:getBlue");
+		Color Color = new Color(1, 1, 1);
+		assert(Color.getRed() == 1);
+	}
+
+	public static void main(String... args){
+		ColorTest ColorTest = new ColorTest();
+		ColorTest.testGetRed();
+		ColorTest.testGetGreen();
+		ColorTest.testGetBlue();
+
+		System.out.println("ColorTest Completed");
+	}}
