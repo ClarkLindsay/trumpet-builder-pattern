@@ -2,22 +2,21 @@ package edu.jalc.trumpet.materialProperties.etching;
 
 public class Etching {
 
-   private int numberOfEtchings;
-   private int currentEtchings;
+   private int design;
 
    private Etching() {
-      numberOfEtchings = 0;
-      currentEtchings = 0;
+      design = 0;
    }
    
-   public Etching(int numberOfEtchings, int currentEtchings) throws Exception{
-      if (numberOfEtchings > currentEtchings)
-         this.numberOfEtchings = numberOfEtchings;
-      else
-         throw new Exception("New etchings must be greater than current etchings");
+   public Etching(int design){
+         setDesign(design);
    }
    
-   public int getNumberOfEtchings(){
-      return numberOfEtchings;
+   public void setDesign(int design){
+      this.design = design;
+   }
+   
+   public int getDesign(){
+      return design;
    }
 }
