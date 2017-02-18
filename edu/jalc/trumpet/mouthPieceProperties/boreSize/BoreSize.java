@@ -2,7 +2,7 @@ package edu.jalc.trumpet.mouthPieceProperties.boreSize;
 
 public class BoreSize {
 
-   private int boreSizeDepth;
+   private final int boreSizeDepth;
    
    private BoreSize(){
       boreSizeDepth = 0;

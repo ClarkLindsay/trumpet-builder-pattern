@@ -9,14 +9,10 @@ public class Material {
    private Etching trumpetEtching;
       
    public Material(Color trumpetColor, Etching trumpetEtching) {
-      this.setColor(trumpetColor);
+      this.trumpetColor = trumpetColor;
       this.setEtching(trumpetEtching);
    }
-   
-   void setColor(Color color){
-      this.trumpetColor = trumpetColor;
-   }
-      
+         
    void setEtching(Etching trumpetEtching){ 
       this.trumpetEtching = trumpetEtching;
    }
