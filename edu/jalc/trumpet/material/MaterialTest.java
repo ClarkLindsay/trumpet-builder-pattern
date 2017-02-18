@@ -8,7 +8,7 @@ public class MaterialTest {
    public void testSetColor() throws Exception {
       System.out.println("Testing Material::setColor");
       Material material = new Material(null, null);
-      Color color = new Color(0);
+      Color color = new Color();
       material.setColor(color);
       assert(color == material.getColor());
    }
@@ -16,7 +16,7 @@ public class MaterialTest {
    public void testSetEtching() throws Exception {
       System.out.println("Testing Material::setEtching");
       Material material = new Material(null, null);
-      Etching etching = new Etching(0);
+      Etching etching = new Etching(1, 0);
       material.setEtching(etching);
       assert(etching == material.getEtching());
    }
@@ -24,14 +24,14 @@ public class MaterialTest {
 
    public void testGetColor() throws Exception {
       System.out.println("Testing Material::getColor");
-      Color color = new Color(0);
+      Color color = new Color();
       Material trumpetMaterial = new Material(color, null);		
       assert(trumpetMaterial.getColor() == color);
    }
    
    public void testGetEtching() throws Exception {
       System.out.println("Testing Material::getEtching");
-      Etching etching = new Etching(0);
+      Etching etching = new Etching(1, 0);
       Material trumpetMaterial = new Material(null, etching);
       assert(trumpetMaterial.getEtching() == etching);
    }
