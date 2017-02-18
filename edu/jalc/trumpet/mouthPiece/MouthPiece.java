@@ -8,22 +8,16 @@ public class MouthPiece {
    private RimStyle style;
    private BoreSize mouthPieceBoreSize;
 
-   public MouthPiece(RimStyle style, BoreSize mouthPieceBoreSize) throws Exception{
+   public MouthPiece(RimStyle style, BoreSize mouthPieceBoreSize) {
       setStyle(style);
       setBoreSize(mouthPieceBoreSize);
    } 
       
-   void setStyle(RimStyle style) throws Exception {
-      if(style == null) 
-         throw new Exception("Style cannot be null");
-      
+   void setStyle(RimStyle style) {   
       this.style = style;
    }
    
-   void setBoreSize(BoreSize boreSize) throws Exception {
-      if(boreSize == null) 
-         throw new Exception("BoreSize cannot be null");
-      
+   void setBoreSize(BoreSize boreSize) {
       mouthPieceBoreSize = boreSize;
    }
    
