@@ -8,9 +8,9 @@ public class MouthPiece {
    private RimStyle style;
    private BoreSize mouthPieceBoreSize;
 
-   public MouthPiece(RimStyle style, BoreSize mouthPieceBoreSize) {
-      this.style = style;
-      this.mouthPieceBoreSize = mouthPieceBoreSize;
+   public MouthPiece(RimStyle style, BoreSize mouthPieceBoreSize) throws Exception{
+      setStyle(style);
+      setBoreSize(mouthPieceBoreSize);
    } 
       
    void setStyle(RimStyle style) throws Exception {
