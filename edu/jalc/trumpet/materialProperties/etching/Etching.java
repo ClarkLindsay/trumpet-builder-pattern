@@ -1,6 +1,6 @@
 package edu.jalc.trumpet.materialProperties.etching;
 
-public class Etching {
+public class Etching implements Etchable{
 
    private int design;
 
@@ -11,6 +11,8 @@ public class Etching {
    public Etching(int design){
          setDesign(design);
    }
+   
+   public void etch(){System.out.println("I'm etching");}
    
    public void setDesign(int design){
       this.design = design;
