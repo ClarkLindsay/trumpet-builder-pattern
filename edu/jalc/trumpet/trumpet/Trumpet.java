@@ -8,7 +8,7 @@ public class Trumpet implements Playable, Polishable{
 
    private Material trumpetMaterial;
    private MouthPiece trumpetMouthPiece;
-         
+            
    public Trumpet(Material trumpetMaterial, MouthPiece trumpetMouthPiece) {
       setMaterial(trumpetMaterial);
       setMouthPiece(trumpetMouthPiece);
