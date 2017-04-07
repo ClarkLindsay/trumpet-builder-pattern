@@ -4,15 +4,15 @@ import edu.jalc.trumpet.trumpet.Trumpet;
 
 interface TrumpetBuilderInterface{
 
-   public String withHighQualityEtching();
+   public TrumpetBuilderInterface withHighQualityEtching();
    
-   public String withLowQualityEtching();
+   public TrumpetBuilderInterface withLowQualityEtching();
 
-   public String useSilver();
+   public TrumpetBuilderInterface useSilver();
    
-   public String useGold();
+   public TrumpetBuilderInterface useGold();
    
-   public String comesWithMute();
+   public TrumpetBuilderInterface comesWithMute();
 
    public Trumpet build();
 }
